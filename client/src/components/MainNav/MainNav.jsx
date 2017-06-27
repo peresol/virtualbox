@@ -2,6 +2,8 @@ import React from 'react';
 
 import {Link} from 'react-router-dom'
 
+import './mainNav.sass'
+
 
 export default class MainNav extends React.Component {
   render() {
