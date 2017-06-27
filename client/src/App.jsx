@@ -5,12 +5,11 @@ import {
   Route
 } from 'react-router-dom'
 
+import MainNav from './components/MainNav/MainNav.jsx'
+
 import Home from './views/Home/Home.jsx'
 import Videos from './views/Videos/Videos.jsx'
 import Creators from './views/Creators/Creators.jsx'
-
-import MainNav from './MainNav/MainNav.jsx'
-
 
 export default class App extends React.Component {
   render() {
@@ -19,7 +18,6 @@ export default class App extends React.Component {
         <div>
 
           <MainNav />
-
 
           <Route exact path='/' component={Home} />
           <Route path='/videos' component={Videos} />
