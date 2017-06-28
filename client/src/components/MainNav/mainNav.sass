@@ -1,25 +1,28 @@
 .vb-main-nav
+  position: fixed
   height: 60px
   width: 100%
   background-color: black
   //background-color: #FFCC00
-  margin: 0px
-  padding: 0px
-  text-align: left
 
-  .vb-list-menu
-    list-style: none
-    margin: 0px
+
+  ul.vb-list-menu
+    margin: 40px 0px 0px 10px
     padding: 0px
-    display: flex
-    flex-wrap: nowrap
+    list-style: none
 
-    .vb-menu
+    li.vb-menu
+      display: inline-block
+      margin-right: 10px
+      color: white
       font-size: 12px
       font-weight: bold
-      margin-top: 40px; margin-left: 10px; margin-right: 10px
-      color: white
+
 
       a
-        text-decoration: none
         color: white
+        text-decoration: none  
+        transition: all .5s ease
+
+        &:hover
+          color: yellow

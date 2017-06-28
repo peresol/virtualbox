@@ -17,6 +17,6 @@ export default class Creators extends React.Component {
           hola 3
         </div>
 
-      </div>);
+      </div>)
   }
 }
