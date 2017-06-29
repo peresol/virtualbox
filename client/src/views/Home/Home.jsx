@@ -1,6 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import './home.sass';
+
+import Thumbnail from './../../components/Thumbnail/Thumbnail.jsx'
+import Advertising from './../../components/Advertising/Advertising.jsx'
+import Studio from './../../components/Studio/Studio.jsx'
+import Calendar from './../../components/Calendar/Calendar.jsx'
+
+import './home.sass'
 
 export default class Home extends React.Component {
   render() {
@@ -8,15 +14,21 @@ export default class Home extends React.Component {
       <div className="vb-home">
 
         <div className="vb-live">
-          Espai per posar els videos dels directes
+          <Thumbnail />
+          <Thumbnail />
+          <Thumbnail />
         </div>
 
         <div className="vb-artist">
-          Aquí hi aniran els dossiers i videos dels artistes
+          <Thumbnail />
+          <Thumbnail />
+          <Thumbnail />
         </div>
 
-        <div className="vb-video">
-          Aquí hi ha tot el historial de videos
+        <div className="vb-control">
+          <Advertising />
+          <Studio />
+          <Calendar />
         </div>
 
       </div>)

@@ -1,26 +1,42 @@
 .vb-home
   display: flex
-  flex-flow: column nowrap
-  align-self: stretch
-  align-content: stretch
-  align-items: stretch
-  min-height: 800px
+  flex-flow: row wrap
+  justify-content: center
 
   div.vb-live
     order: 1
-    flex: 1 1 auto
-    background-color: red
+    flex: 1 1 30%
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+
+    background-color: white
+    min-width: 300px
+    min-height: 700px
     margin-top: 60px
-    max-height: 33.4%
 
   div.vb-artist
     order: 2
-    flex: 1 1 auto
-    background-color: blue
-    max-height: 33.3%
+    flex: 1 1 30%
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
 
-  div.vb-video
+    background-color: white
+    min-width: 300px
+    min-height: 700px
+    margin-top: 60px
+
+  div.vb-control
     order: 3
-    flex: 1 1 auto
-    background-color: green
-    max-height: 33.3%
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+
+    background-color: white
+    margin-top: 60px
+    min-height: 700px
+    border-style: solid
+    border-width: 2px
+    border-color: black
+    width: 300px
