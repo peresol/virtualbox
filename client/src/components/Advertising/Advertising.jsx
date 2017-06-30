@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from 'react'
 
 import './advertising.sass'
 
@@ -8,7 +7,7 @@ export default class Advertising extends React.Component {
   render() {
     return (
       <div className="vb-advertising">
-        <p>PUBLICITAT</p>
+        PUBLICITAT
       </div>
 
 
