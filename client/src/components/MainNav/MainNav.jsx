@@ -4,6 +4,8 @@ import {Link} from 'react-router-dom'
 
 import './mainNav.sass'
 
+//import imatge from 'assets/img/parusater3.jpg'
+
 
 export default class MainNav extends React.Component {
   render() {
@@ -18,6 +20,10 @@ export default class MainNav extends React.Component {
           <li className="vb-menu"><Link to="/videos">Videos</Link></li>
           <li className="vb-menu"><Link to="/messages">Missatges</Link></li>
         </ul>
+
+        {
+          // <img src={imatge} />
+        }
 
         <ul className="vb-list-menu-2">
           <li className="vb-menu-2"><Link to="/enter">Entrar</Link></li>

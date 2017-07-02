@@ -20,7 +20,18 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.sass$/, loaders: ["style-loader", "css-loader", "sass-loader"]}
+      { test: /\.sass$/, loaders: ["style-loader", "css-loader", "sass-loader"]},
+      { test: /\.(jpe?g|png|gif|svg)$/i, loaders: [
+        'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+        'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+      }
+    ]
+  },
+  resolve: {
+    modules: [
+      path.resolve('./client'),
+      path.resolve('./node_modules')
     ]
   },
   plugins: [
