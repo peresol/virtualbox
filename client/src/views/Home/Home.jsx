@@ -25,6 +25,12 @@ export default class Home extends React.Component {
           <Thumbnail />
         </div>
 
+        <div className="vb-video">
+          <Thumbnail />
+          <Thumbnail />
+          <Thumbnail />
+        </div>
+
         <div className="vb-control">
           <Advertising />
           <Studio />
