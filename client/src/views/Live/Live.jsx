@@ -8,6 +8,7 @@ export default class Live extends React.Component {
       <div className="vb-live">
 
         <div className="vb-live">
+          <br /><br /><br />
           Espai pel directe i les properes emissions
         </div>
 

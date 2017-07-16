@@ -7,45 +7,55 @@ import './mainNav.sass'
 import logoVB from 'assets/img/logo-vb-30px.gif'
 import iconInfo from 'assets/img/icon-info.gif'
 
-
 export default class MainNav extends React.Component {
 
 
   render() {
 
-
     return (
 
       <nav className="vb-main-nav">
 
-        <Link to="/">
-          <img className="logoVB" src={logoVB} />
-        </Link>
+        <div className="menu-item-1">
+          <Link to="/">
+            <img className="logoVB" src={logoVB} />
+          </Link>
+        </div>
 
-        <ul className="vb-list-menu">
-          <li className="vb-menu">
-            <Link to="/live">Directes</Link>
-          </li>
-          <li className="vb-menu">
-            <Link to="/creators">Creatius</Link>
-          </li>
-          <li className="vb-menu">
-            <Link to="/videos">Històric</Link>
-          </li>
-        </ul>
+        <div className="menu-item-2">
+          <Link to="/live">
+            <span>Directes</span>
+            <img className="iconInfo" src={iconInfo} />
+          </Link>
+        </div>
 
-        <ul className="vb-list-menu-2">
-          <li className="vb-menu-2">
-            <Link to="/enter">Entrar</Link>
-          </li>
-          <li className="vb-menu-2">
-            <Link to="/regulations">
-              <div className="proves">
-                Info <img className="iconInfo" src={iconInfo} />
-              </div>
-            </Link>
-          </li>
-        </ul>
+        <div className="menu-item-3">
+          <Link to="/creators">
+            <span>Creatius</span>
+            <img className="iconInfo" src={iconInfo} />
+          </Link>
+        </div>
+
+        <div className="menu-item-4">
+          <Link to="/videos">
+            <span>Històric</span>
+            <img className="iconInfo" src={iconInfo} />
+          </Link>
+        </div>
+
+        <div className="menu-item-5">
+          <Link to="/enter">
+            <span>Entrar</span>
+            <img className="iconInfo" src={iconInfo} />
+          </Link>
+        </div>
+
+        <div className="menu-item-6">
+          <Link to="/info">
+            <span>Info</span>
+            <img className="iconInfo" src={iconInfo} />
+          </Link>
+        </div>
 
       </nav>
      )
