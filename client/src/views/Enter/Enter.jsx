@@ -1,40 +1,54 @@
 import React from 'react'
 
-import Advertising from './../../components/Advertising/Advertising.jsx'
+import {Link} from 'react-router-dom'
+
+import Register from './Register/Register.jsx'
+import Password from './Password/Password.jsx'
 
 import './enter.sass'
 
 export default class Enter extends React.Component {
+
   render() {
     return (
 
         <div className="vb-enter">
-          // Solucionar alçada i que no hi hagi de posar salts de linea
           <br /><br /><br />
-          Espai per posar el formulari d'entrada i el de registre
-          <div className="vb-email">
+          Espai per posar el formulari d'entrada o login
+          <div className="vb-enter-2">
+            <p>Text explicatiu sobre les ventatges d’estar registrat: rebre notificacions, mailing, fer videoconferències,
+              presentacions, contactar amb artistes…</p>
+            <p>Text explicatiu sobre les ventatges d’estar registrat: rebre notificacions, mailing, fer videoconferències,
+              presentacions, contactar amb artistes…</p>
+            <br />
+            <h2>DADES DE REGISTRE</h2>
+            <br />
 
             <form id="login_form" action="" method="post">
               Correu electrònic
               <br />
-              <input type="text" name="email" size="60" autofocus="autofocus" autocomplete="off" />
+              <input type="text" name="email" size="60" autofocus="autofocus" />
               <br /><br />
               Contrasenya
               <br />
               <input type="password" name="password" size="20" />
               <br /><br />
-              <input name="vb_remember" type="checkbox" value="1" />
+              <input type="checkbox" name="vb_remember" value="1" />
               Recordar-me
               <br /><br />
               <input type="submit" value="Entrar" />
             </form>
 
-            <p className="vb-link">
-              He oblidat la contrasenya
-            </p>
-            <p className="vb-link">
-              Vull registrar-me
-            </p>
+            <Link to="/password">
+              <p className="vb-link">
+                He oblidat la contrasenya
+              </p>
+            </Link>
+            <Link to="/register">
+              <p className="vb-link">
+                Vull registrar-me
+              </p>
+            </Link>
 
           </div>
 

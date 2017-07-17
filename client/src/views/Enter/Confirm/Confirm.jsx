@@ -1,25 +1,25 @@
 import React from 'react'
 
-import './register.sass'
+import './confirm.sass'
 
-export default class Register extends React.Component {
+export default class Confirm extends React.Component {
 
   render() {
     return (
 
-        <div className="vb-register">
+        <div className="vb-confirm">
           <br /><br /><br />
           Espai per posar el formulari de registre
-          <div className="vb-register-2">
+          <div className="vb-confirm-2">
             <p>Text explicatiu sobre les ventatges d’estar registrat: rebre notificacions, mailing, fer videoconferències,
               presentacions, contactar amb artistes…</p>
             <p>Text explicatiu sobre les ventatges d’estar registrat: rebre notificacions, mailing, fer videoconferències,
               presentacions, contactar amb artistes…</p>
             <br />
-            <h2>DADES DE REGISTRE</h2>
+            <h2>CONFIRMACIÓ DE REGISTRE</h2>
             <br />
 
-            <form id="login_form" action="/confirm" method="post">
+            <form id="login_form" action="" method="post">
               Nom
               <br />
               <input type="text" name="name-1" size="40" autofocus="autofocus" />

@@ -9,7 +9,6 @@ import iconInfo from 'assets/img/icon-info.gif'
 
 export default class MainNav extends React.Component {
 
-
   render() {
 
     return (
