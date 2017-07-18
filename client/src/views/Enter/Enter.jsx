@@ -2,9 +2,6 @@ import React from 'react'
 
 import {Link} from 'react-router-dom'
 
-import Register from './Register/Register.jsx'
-import Password from './Password/Password.jsx'
-
 import './enter.sass'
 
 export default class Enter extends React.Component {

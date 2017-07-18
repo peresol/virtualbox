@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {Link} from 'react-router-dom'
+
 import './register.sass'
 
 export default class Register extends React.Component {
@@ -46,6 +48,12 @@ export default class Register extends React.Component {
               <br /><br />
               <input type="submit" value="Entrar" />
             </form>
+
+            <Link to="/confirm">
+              <p className="vb-link">
+                Enllaç provisional a confirmació registre
+              </p>
+            </Link>
 
           </div>
 
