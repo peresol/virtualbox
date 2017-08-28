@@ -1,7 +1,8 @@
-import React from 'react';
-
+import React from 'react'
 
 import './thumbnail.sass'
+
+import proves1 from 'assets/img/proves1.jpg'
 
 
 export default class Thumbnail extends React.Component {
@@ -9,13 +10,7 @@ export default class Thumbnail extends React.Component {
     return (
       <div className="vb-thumbnail">
 
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/FhKJgqxNDD8"
-          frameborder="0"
-          allowfullscreen>
-        </iframe>
+          <img className="proves1" src={proves1} />
 
       </div>
 

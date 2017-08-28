@@ -1,62 +1,66 @@
 
+/* El menú té 4 parts: el logo, els 5 items, un espai buit per poder centrar els items i un item del menú emergent */
 .vb-main-nav
   display: flex
   flex-flow: row nowrap
   align-items: center
-  justify-content: space-between
-
-  position: fixed
-
-  height: 50px
-  width: 100%
-  background-color: black
-  z-index: 10
-  //background-color: #FFCC00
-  //background-image: url('/client/assets/img/parusater3.jpg')
 
   div.menu-item-1
     order: 1
-    margin-left: 20px
+    flex: 0 1 auto
+
+    text-align: left
+    /* Si la pantalla és més petita de 800px llavors no es mostra el menú i s'hi posa un botó desplegable */
+    @media screen and (max-width: 800px)
+        display: none
+
+    span
+        margin-left: 30px
+        margin-right: 10px
+        vertical-align: super
+        font-size: 13px
+        font-weight: bold
+
+    a
+        color: white
+        text-decoration: none
+        transition: all .5s ease
+
+        &:hover
+          color: #FFCC00
+
+  div.menu-item-logo
+    order: 2
+    flex: 1 1 auto
+
+    text-align: center
+    /* Si la pantalla és més petita de 800px llavors es mostra el logo a l'esquerra */
+    @media screen and (max-width: 800px)
+      text-align: left
+      margin-left: 20px
+
+  div.menu-item-space
+    order: 3
+    flex: 0 1 auto
+
+    width: 100px
+    /* Si la pantalla és més petita de 1000px llavors s'elimina l'espai buit per fer lloc al logo */
+    @media screen and (max-width: 1000px)
+        display: none
 
   div.menu-item-2
-    order: 2
-
-    span
-        margin-right: 20px
-        vertical-align: super
-        font-size: 13px
-        font-weight: bold
-
-    a
-        color: white
-        text-decoration: none
-        transition: all .5s ease
-
-        &:hover
-          color: #FFCC00
-
-  div.menu-item-3
-    order: 3
-
-    span
-        margin-right: 20px
-        vertical-align: super
-        font-size: 13px
-        font-weight: bold
-
-    a
-        color: white
-        text-decoration: none
-        transition: all .5s ease
-
-        &:hover
-          color: #FFCC00
-
-  div.menu-item-4
     order: 4
+    flex: 0 1 auto
+
+    margin-right: 30px
+    text-align: right
+    /* Si la pantalla és més petita de 800px llavors no es mostra el menú i s'hi posa un botó desplegable */
+    @media screen and (max-width: 800px)
+        display: none
 
     span
-        margin-right: 20px
+        margin-left: 30px
+        margin-right: 10px
         vertical-align: super
         font-size: 13px
         font-weight: bold
@@ -69,37 +73,13 @@
         &:hover
           color: #FFCC00
 
-  div.menu-item-5
+  div.menu-item-right
     order: 5
+    flex: 0 1 auto
 
-    span
-        margin-right: 20px
-        vertical-align: super
-        font-size: 13px
-        font-weight: bold
-
-    a
-        color: white
-        text-decoration: none
-        transition: all .5s ease
-
-        &:hover
-          color: #FFCC00
-
-  div.menu-item-6
-    order: 6
-    margin-right: 20px
-
-    span
-        margin-right: 20px
-        vertical-align: super
-        font-size: 13px
-        font-weight: bold
-
-    a
-        color: white
-        text-decoration: none
-        transition: all .5s ease
-
-        &:hover
-          color: #FFCC00
+    margin-right: 30px
+    /* Amaguem el item del menú i només es veu si la pantalla és més gran de 800px */
+    display: none
+    /* Si la pantalla és més petita de 800px llavors es mostra el botó del menú emergent*/
+    @media screen and (max-width: 800px)
+        display: inline-block

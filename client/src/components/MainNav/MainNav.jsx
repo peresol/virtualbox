@@ -16,44 +16,51 @@ export default class MainNav extends React.Component {
       <nav className="vb-main-nav">
 
         <div className="menu-item-1">
-          <Link to="/">
-            <img className="logoVB" src={logoVB} />
-          </Link>
-        </div>
-
-        <div className="menu-item-2">
           <Link to="/live">
             <span>Directes</span>
             <img className="iconInfo" src={iconInfo} />
           </Link>
         </div>
 
-        <div className="menu-item-3">
+        <div className="menu-item-1">
           <Link to="/creators">
             <span>Creatius</span>
             <img className="iconInfo" src={iconInfo} />
           </Link>
         </div>
 
-        <div className="menu-item-4">
+        <div className="menu-item-1">
           <Link to="/videos">
             <span>Històric</span>
             <img className="iconInfo" src={iconInfo} />
           </Link>
         </div>
 
-        <div className="menu-item-5">
+        <div className="menu-item-logo">
+          <Link to="/">
+            <img className="logoVB" src={logoVB} />
+          </Link>
+        </div>
+
+        <div className="menu-item-2">
           <Link to="/enter">
             <span>Entrar</span>
             <img className="iconInfo" src={iconInfo} />
           </Link>
         </div>
 
-        <div className="menu-item-6">
+        <div className="menu-item-2">
           <Link to="/info">
             <span>Info</span>
             <img className="iconInfo" src={iconInfo} />
           </Link>
+        </div>
+
+        <div className="menu-item-space">
+        </div>
+
+        <div className="menu-item-right">
+          <img className="iconInfo" src={iconInfo} />
         </div>
 
       </nav>

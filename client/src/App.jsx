@@ -3,6 +3,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 import MainNav from './components/MainNav/MainNav.jsx'
+import SideBar from './components/SideBar/SideBar.jsx'
 
 import Home from './views/Home/Home.jsx'
 import Live from './views/Live/Live.jsx'
@@ -36,6 +37,10 @@ export default class App extends React.Component {
             <Route path='/confirm' component={Confirm} />
             <Route path='/info' component={Info} />
 
+          </div>
+
+          <div className="vb-sidebar">
+            <SideBar />
           </div>
 
         </div>

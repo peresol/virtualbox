@@ -10,8 +10,6 @@ export default class Enter extends React.Component {
     return (
 
         <div className="vb-enter">
-          <br /><br /><br />
-          Espai per posar el formulari d'entrada o login
           <div className="vb-enter-2">
             <p>Text explicatiu sobre les ventatges d’estar registrat: rebre notificacions, mailing, fer videoconferències,
               presentacions, contactar amb artistes…</p>

@@ -6,14 +6,8 @@ export default class Creators extends React.Component {
   render() {
     return (
       <div className="vb-creators">
-
-        <div className="vb-creators">
-          <br /><br /><br />
           Espai per posar les obres dels artistes
-        </div>
-
-
-
-      </div>)
+      </div>
+    )
   }
 }
